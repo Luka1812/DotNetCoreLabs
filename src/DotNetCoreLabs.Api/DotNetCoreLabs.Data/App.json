@@ -1,0 +1,11 @@
+
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "database": "Server=localhost;database=DotNetCoreLabsDatabase;user=root;pwd=root;"
+  }
+}
