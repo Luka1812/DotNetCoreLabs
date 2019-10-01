@@ -1,9 +1,0 @@
-/Users/lukavavetic/projects/DotNetCoreLabs/src/DotNetCoreLabs.Api/DotNetCoreLabs.Data/bin/Debug/netstandard2.0/DotNetCoreLabs.Data.deps.json
-/Users/lukavavetic/projects/DotNetCoreLabs/src/DotNetCoreLabs.Api/DotNetCoreLabs.Data/bin/Debug/netstandard2.0/DotNetCoreLabs.Data.dll
-/Users/lukavavetic/projects/DotNetCoreLabs/src/DotNetCoreLabs.Api/DotNetCoreLabs.Data/bin/Debug/netstandard2.0/DotNetCoreLabs.Data.pdb
-/Users/lukavavetic/projects/DotNetCoreLabs/src/DotNetCoreLabs.Api/DotNetCoreLabs.Data/obj/Debug/netstandard2.0/DotNetCoreLabs.Data.csprojAssemblyReference.cache
-/Users/lukavavetic/projects/DotNetCoreLabs/src/DotNetCoreLabs.Api/DotNetCoreLabs.Data/obj/Debug/netstandard2.0/DotNetCoreLabs.Data.csproj.CoreCompileInputs.cache
-/Users/lukavavetic/projects/DotNetCoreLabs/src/DotNetCoreLabs.Api/DotNetCoreLabs.Data/obj/Debug/netstandard2.0/DotNetCoreLabs.Data.AssemblyInfoInputs.cache
-/Users/lukavavetic/projects/DotNetCoreLabs/src/DotNetCoreLabs.Api/DotNetCoreLabs.Data/obj/Debug/netstandard2.0/DotNetCoreLabs.Data.AssemblyInfo.cs
-/Users/lukavavetic/projects/DotNetCoreLabs/src/DotNetCoreLabs.Api/DotNetCoreLabs.Data/obj/Debug/netstandard2.0/DotNetCoreLabs.Data.dll
-/Users/lukavavetic/projects/DotNetCoreLabs/src/DotNetCoreLabs.Api/DotNetCoreLabs.Data/obj/Debug/netstandard2.0/DotNetCoreLabs.Data.pdb
