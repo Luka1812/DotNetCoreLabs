@@ -9,7 +9,7 @@ namespace DotNetCoreLabs.Data.Context
 {
     public partial class DotNetCoreLabsContext : DbContext
     {
-        public DbSet<User> Useres { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public DotNetCoreLabsContext()
         {
