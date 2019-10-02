@@ -1,5 +1,6 @@
 ﻿using System;
 using DotNetCoreLabs.Data.Context;
+using DotNetCoreLabs.Data.Repository;
 using DotNetCoreLabs.Data.Seed;
 
 namespace DotNetCoreLabs.Data
@@ -9,10 +10,9 @@ namespace DotNetCoreLabs.Data
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
             
-            var seeder = new DotNetCoreLabsSeeder(new DotNetCoreLabsContext());
-            seeder.SeedDatabase();
+            //var seeder = new DotNetCoreLabsSeeder(new DotNetCoreLabsContext());
+            //seeder.SeedDatabase();
         }
     }
 }
