@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DotNetCoreLabs.Data.Migrations
 {
     [DbContext(typeof(DotNetCoreLabsContext))]
-    [Migration("20191001181113_User")]
+    [Migration("20191002182503_User")]
     partial class User
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,6 +25,8 @@ namespace DotNetCoreLabs.Data.Migrations
 
                     b.Property<DateTime>("BirthDate");
 
+                    b.Property<string>("Email");
+
                     b.Property<string>("Firstname");
 
                     b.Property<string>("Lastname");
@@ -33,7 +35,7 @@ namespace DotNetCoreLabs.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Useres");
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

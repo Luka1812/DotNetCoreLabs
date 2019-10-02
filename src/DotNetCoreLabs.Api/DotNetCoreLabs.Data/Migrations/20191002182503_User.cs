@@ -14,6 +14,7 @@ namespace DotNetCoreLabs.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
                     Username = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: true),
                     Firstname = table.Column<string>(nullable: true),
                     Lastname = table.Column<string>(nullable: true),
                     BirthDate = table.Column<DateTime>(nullable: false)

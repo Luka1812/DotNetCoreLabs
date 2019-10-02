@@ -23,6 +23,8 @@ namespace DotNetCoreLabs.Data.Migrations
 
                     b.Property<DateTime>("BirthDate");
 
+                    b.Property<string>("Email");
+
                     b.Property<string>("Firstname");
 
                     b.Property<string>("Lastname");
@@ -31,7 +33,7 @@ namespace DotNetCoreLabs.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Useres");
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }
