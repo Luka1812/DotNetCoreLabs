@@ -21,7 +21,7 @@ namespace DotNetCoreLabs.Api
         public void ConfigureServices(IServiceCollection services)
         {
            
-            services.AddDbContext<DotNetCoreLabsContext>(options => options.UseMySQL("Server=localhost;database=DotNetCoreLabsDatabase;user=root;pwd=root;"));
+            services.AddDbContext<DotNetCoreLabsContext>(options => options.UseMySQL(Configuration.GetConnectionString("DotNetCoreLabs")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

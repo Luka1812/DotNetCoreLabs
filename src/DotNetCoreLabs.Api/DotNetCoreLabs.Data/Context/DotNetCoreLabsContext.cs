@@ -1,8 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.Extensions.Configuration;
-using System.IO;
+﻿using Microsoft.EntityFrameworkCore;
 using DotNetCoreLabs.Data.Entities;
 using DotNetCoreLabs.Data.Seed.Seeders;
 
@@ -20,14 +16,6 @@ namespace DotNetCoreLabs.Data.Context
             : base(options)
         {
         }
-
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    if (!optionsBuilder.IsConfigured)
-        //    {
-        //        optionsBuilder.UseMySQL("Server=localhost;database=DotNetCoreLabsDatabase;user=root;pwd=root;");
-        //    }
-        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

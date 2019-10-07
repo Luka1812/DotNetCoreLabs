@@ -10,4 +10,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.17" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="App.json" />
+  </ItemGroup>
 </Project>
