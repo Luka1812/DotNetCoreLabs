@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 using DotNetCoreLabs.Data.Entities;
+using DotNetCoreLabs.Data.Seed.Seeders;
 
 namespace DotNetCoreLabs.Data.Context
 {
@@ -37,6 +38,14 @@ namespace DotNetCoreLabs.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
+
+            SeedData(modelBuilder);
+        }
+
+        private void SeedData(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>().HasData(new UserSeeder().UsersData());
+                
         }
     }
 }

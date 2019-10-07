@@ -34,6 +34,26 @@ namespace DotNetCoreLabs.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            BirthDate = new DateTime(1994, 12, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "luka.vavetic@gmail.com",
+                            Firstname = "Luka",
+                            Lastname = "Vavetić",
+                            Username = "Lukaku"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            BirthDate = new DateTime(1989, 11, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "frano.sasavi@gmail.com",
+                            Firstname = "Frano",
+                            Lastname = "Sasvari",
+                            Username = "Fusari"
+                        });
                 });
 #pragma warning restore 612, 618
         }

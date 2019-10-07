@@ -23,6 +23,16 @@ namespace DotNetCoreLabs.Data.Migrations
                 {
                     table.PrimaryKey("PK_Users", x => x.Id);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "BirthDate", "Email", "Firstname", "Lastname", "Username" },
+                values: new object[] { 1, new DateTime(1994, 12, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), "luka.vavetic@gmail.com", "Luka", "Vavetić", "Lukaku" });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "BirthDate", "Email", "Firstname", "Lastname", "Username" },
+                values: new object[] { 2, new DateTime(1989, 11, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "frano.sasavi@gmail.com", "Frano", "Sasvari", "Fusari" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
