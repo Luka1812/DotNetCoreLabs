@@ -21,19 +21,13 @@ namespace DotNetCoreLabs.Data.Context
         {
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-               var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("App.json", optional: true, reloadOnChange: true);
-
-                IConfigurationRoot configuration = builder.Build();
-                
-                optionsBuilder.UseMySQL(configuration.GetConnectionString("database"));
-            }
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    if (!optionsBuilder.IsConfigured)
+        //    {
+        //        optionsBuilder.UseMySQL("Server=localhost;database=DotNetCoreLabsDatabase;user=root;pwd=root;");
+        //    }
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

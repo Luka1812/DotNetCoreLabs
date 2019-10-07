@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using DotNetCoreLabs.Data.Context;
 using DotNetCoreLabs.Data.Entities;
 
@@ -18,7 +16,7 @@ namespace DotNetCoreLabs.Data.Repository
 
         public IEnumerable<User> GetAll()
         {
-            return context.Users.ToList();
+            return context.Users;
         }
     }
 }
